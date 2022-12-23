@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- <link rel="stylesheet" href="./css/iso.css"> -->
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="icon" href="images/fav.png">
+</head>
+
+    <body class="bg-body">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 bg-white shadow-sm">
+                    <div class="sidebar min-vh-100  " >
+                        <ul>
+                            <li class="my-3">
+                                <a href="index.html" >
+                                    <img src="./images/logo.PNG" class="brand-logo" height="50" alt="">
+                                </a>
+                            </li>
+                            <li class="sidebar-spacer"></li>
+                            <li>
+                                <a href="index.html" class="sidebar-link ">
+                                    <i class="fas fa-home fa-fw sidebar-link-icon"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="contact-message.html" class="sidebar-link">
+                                    <i class="fas fa-envelope fa-fw sidebar-link-icon"></i>
+                                    Contact Messages
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ioscalc.html" class="sidebar-link">
+                                    <i class="fas fa-calculator fa-fw sidebar-link-icon"></i>
+                                    IOS calculator
+                                </a>
+                            </li> <li>
+                                <a href="map.html" class="sidebar-link">
+                                    <i class="fas fa-map fa-fw sidebar-link-icon"></i>
+                                    Myanmar Map
+                                </a>
+                            </li>
+                            <li class="sidebar-spacer"></li>
+                            <li>
+                                <p class="sidebar-group-title">Manage Article</p>
+                            </li>
+                            <li>
+                                <a href="article-create.html" class="sidebar-link active">
+                                    <i class="fas fa-plus-circle fa-fw sidebar-link-icon"></i>
+                                    Create Article
+                                </a>
+                            </li>
+                            <li>
+                                <a href="article-list.html" class="sidebar-link">
+                                    <i class="fas fa-list fa-fw sidebar-link-icon"></i>
+                                    Article Lists
+                                </a>
+                            </li>
+                            <li class="sidebar-spacer"></li>
+                            <li>
+                                <p class="sidebar-group-title">Manage Article</p>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">
+                                    <i class="fas fa-plus-circle fa-fw sidebar-link-icon"></i>
+                                    Create Article
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">
+                                    <i class="fas fa-list fa-fw sidebar-link-icon"></i>
+                                    Article Lists
+                                </a>
+                            </li>
+                            <li class="sidebar-spacer"></li>
+                            <li>
+                                <p class="sidebar-group-title">Manage Article</p>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">
+                                    <i class="fas fa-plus-circle fa-fw sidebar-link-icon"></i>
+                                    Create Article
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="sidebar-link">
+                                    <i class="fas fa-list fa-fw sidebar-link-icon"></i>
+                                    Article Lists
+                                </a>
+                            </li>
+                            <li class="sidebar-spacer"></li>
+        
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="content">
+                        <div class="header bg-primary p-2 rounded my-2">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+        
+                                    <input type="text" class="form-control d-inline me-1">
+                                    <button class="btn btn-light text-primary">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                                <div class="">
+                                    <div class="dropdown">
+                                        <button class="btn btn-light w-100" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Cho Thet
+                                         </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <a class="dropdown-item" href="#">
+                                                    Logout
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb my-3">
+                                    <li class="breadcrumb-item"><a href="index.html ">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Calculator</li>
+                                </ol>
+                            </nav>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="border-bottom">
+                                    <h2 >Calculator</h2>
+                                </div>
+                                <div class="calc align-items-center">
+                                    <div class="display"></div>
+                                        <div class="keypad  ">
+                                            <!-- (div.row>(div.col-3>button.btn.btn-light)*4)*5 -->
+                                           <div class="row">
+                                            <div class="action col-3 cp">AC</div>
+                                            <div class="action col-3 cp ">C</div>
+                                            <div class="action col-3 cp">%</div>
+                                            <div class="operator col-3 cp ">&#xf7</div>
+                                           </div>
+                                           <div class="row">
+                                            <div class="number col-3 cp">7</div>
+                                            <div class="number col-3 cp ">8</div>
+                                            <div class="number col-3 cp">9</div>
+                                            <div class="operator col-3 cp ">&#215</div>
+                                           </div>
+                                           <div class="row">
+                                            <div class="number col-3 cp">4</div>
+                                            <div class="number col-3 cp ">5</div>
+                                            <div class="number col-3 cp">6</div>
+                                            <div class="operator col-3 cp ">-</div>
+                                           </div>
+                                           <div class="row">
+                                            <div class="number col-3 cp">1</div>
+                                            <div class="number col-3 cp ">2</div>
+                                            <div class="number col-3 cp">3</div>
+                                            <div class="operator col-3 cp ">&#x2b</div>
+                                           </div>
+                                           <div class="row ">
+                                            <div class="number col-3 cp "> 0</div>  
+                                            <div class="number col-3 cp "> 0</div>
+                                            <div class="number col-3 cp ">.</div>
+                                            <div class="operator col-3 cp ">&#x3d</div>
+                                           </div>
+                                           
+
+
+                                            <!-- <div class="row g-1 ">
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">AC</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">C</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">%</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">&#xf7</button></div>
+                                            </div>
+                                            <div class="row g-1">
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">7</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">8</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">9</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">&#215</button></div>
+                                            </div>
+                                             <div class="row g-1">
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">4</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">5</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">6</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">-</button></div>
+                                            </div>
+                                            <div class="row g-1">
+                                                <div class="col-3"><button class="btn btn-light w-50btn btn-light btn-outline-dark rounded-circle w-25">1</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">2</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">3</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">&#x2b</button></div>
+                                            </div>
+                                            <div class="row g-1">
+                                                <div class="col-6"><button class="btn btn-light btn-outline-dark rounded-circle w-25">0</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">%</button></div>
+                                                <div class="col-3"><button class="btn btn-light btn-outline-dark rounded-circle w-25">&#x3d</button></div>
+                                            </div> -->
+    
+    
+    
+                                           
+                                           
+                                               
+                                        </div>
+                                </div>  
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/chatbox-list.js"></script>
+    <!-- <script>
+        let keypad= document.querySelector(".keypad");
+        let displaybox = document.querySelector('.display');
+        let operators=["+","-","*","/","="];
+        let filter = x =>{
+        let current = displaybox.innerText;
+        let lasChar = current[current.length-1];
+        if(current=="0"){
+            if (x!="."){
+                clearlast()
+            }
+        }
+        if(operators.includes(x)){
+    if(operators.includes(lasChar)){
+        return false;
+    }
+
+        }
+    return true;
+    }
+let showInDisplay = x => {
+    if(filter(x)){
+        displaybox.innerText +=x
+    }
+}
+
+ let calc = _ => displaybox.innerText = eval(displaybox.innerText)
+ 
+ let clearAll = _=>displaybox.innerText ="";
+
+  let clearlast = _ => displaybox.innerText = displaybox.innerText.substring(0,displaybox.innerText.length-1);
+
+ 
+
+    </script> -->
+</body>
+</html>
